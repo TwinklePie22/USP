@@ -7,10 +7,10 @@
 void file_lock(int fd)
 {
     struct flock fl;
-    fl.l_type = F_WRLCK; // Write lock
+    fl.l_type = F_WRLCK;         // Write lock
     fl.l_whence = SEEK_SET;
     fl.l_start = 0;
-    fl.l_len = 0; // Lock entire file
+    fl.l_len = 0;                // Lock entire file
     // Attempt to acquire the lock
     if (fcntl(fd, F_SETLKW, &fl) == -1)
     {
@@ -22,10 +22,10 @@ void file_lock(int fd)
 void file_unlock(int fd)
 {
     struct flock fl;
-    fl.l_type = F_UNLCK; // Unlock
+    fl.l_type = F_UNLCK;    // Unlock
     fl.l_whence = SEEK_SET;
     fl.l_start = 0;
-    fl.l_len = 0; // Unlock entire file
+    fl.l_len = 0;           // Unlock entire file
     // Attempt to release the lock
     if (fcntl(fd, F_SETLK, &fl) == -1)
     {
