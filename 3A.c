@@ -15,3 +15,9 @@ int main(int argc, char *argv[])
     printf("Moved '%s' to '%s'\n", argv[1], argv[2]);
     return 0;
 }
+
+/*
+    ? Output 
+    ToDo : ./.a.out file1.txt file2.txt
+    ! Moved 'file1.txt' to 'file2.txt'
+*/

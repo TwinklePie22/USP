@@ -20,3 +20,8 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
+
+/*
+    ? Output 
+    ToDo :  ./.a.out <pattern>  < file.txt
+*/
