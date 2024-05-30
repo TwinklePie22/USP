@@ -24,4 +24,5 @@ int main(int argc, char *argv[])
 /*
     ? Output 
     ToDo :  ./.a.out <pattern>  < file.txt
+    ! <pattern> is the pattern you want to search for in file.txt
 */
