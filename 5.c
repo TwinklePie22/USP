@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <errno.h>
+
 void file_lock(int fd)
 {
     struct flock fl;
@@ -33,6 +34,7 @@ void file_unlock(int fd)
     }
     printf("File unlocked successfully!\n");
 }
+
 int main()
 {
     int fd;
