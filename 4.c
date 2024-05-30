@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
     // Display information about hard link
-    printf("Information about hard link:\n");
+    printf("Information about hard link -\n");
     printf("Number of links: %ld\n", file_stat.st_nlink);
     // Display information about symbolic link
     if (lstat("sym_link", &file_stat) == -1)
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
         perror("Error getting symbolic link information");
         exit(EXIT_FAILURE);
     }
-    printf("Information about symbolic link:\n");
+    printf("Information about symbolic link -\n");
     printf("Number of links: %ld\n", file_stat.st_nlink);
     return 0;
 }
@@ -48,8 +48,8 @@ int main(int argc, char *argv[])
 /*
     ? Output 
     ToDo : ./.a.out  file1.txt  file2.txt
-    ! Information about hard link:
+    ! Information about hard link -
     ! Number of links: 2
-    ! Information about symbolic link:
+    ! Information about symbolic link -
     ! Number of links: 1
 */
