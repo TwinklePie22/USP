@@ -69,3 +69,10 @@ int main()
     close(fd);
     return 0;
 }
+
+/*
+    ? Output 
+    ToDo : ./.a.out
+    ! File locked successfully!
+    ! File unlocked successfully!
+*/
